@@ -51,3 +51,4 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 
 - Russian (native)
 - English (intermediate level)
+- Czech (upper intermediate level)
