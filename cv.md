@@ -21,7 +21,7 @@ In early 2024, I made the decision to transition from the solar panel industry t
 
 ## Courses
 
-- 42School Prague (in progress) 
+- 42School Prague (in progress)
 - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 
 ## Code example
