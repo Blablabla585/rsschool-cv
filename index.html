@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<p>Hello</p>
+    <div class="container">
+        <header class="header">
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Myself</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section" id="profile">
+                <h1 class="section-title">Ruslan Mamedov</h1>
+                <div class="avatar">
+                    <img src="avatar.jpeg" alt="avatar">
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        Email:<br><a href="mailto:mamedovruslan30@gmail.com" class="cont-link">mamedovruslan30@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        GitHub:<br><a href="https://github.com/Blablabla585" class="cont-link">Blablabla585</a>
+                    </li>
+                    <li class="contacts-item">
+                        LinkedIn:<br><a href="https://www.linkedin.com/in/ruslan-mamedov-27866a2bb/" class="cont-link">Ruslan Mamedov</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="about">
+                <h2 class="section-title">About</h2>
+                <p class="p">In early 2024, I made the decision to transition from the solar panel industry to pursue a career in software development.<br>
+                    This led me to enroll at 42School Prague, where I am currently honing my skills.<br>
+                    My primary interest lies in frontend development, which prompted me to simultaneously study frontend technologies at RS School.<br>
+                    I am hope to become a Junior Frontend Developer by 2025.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills">
+                    <li class="skills-item">C (basics)</li>
+                    <li class="skills-item">HTML5</li>
+                    <li class="skills-item">CSS3</li>
+                    <li class="skills-item">JavaScript (basics)</li>
+                    <li class="skills-item">Git, GitHub</li>
+                    <li class="skills-item">Windows OS, Linux(Ubuntu), Mac OS</li>
+                    <li class="skills-item">VSCode</li>
+                    <li class="skills-item">Language - Russian (native)</li>
+                    <li class="skills-item">Language - English (intermediate level)</li>
+                    <li class="skills-item">Language - Czech (upper intermediate level)</li>
+                </ul>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="skills">
+                    <li class="skills-item">42School Prague (in progress)</li>
+                    <li class="skills-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <h3 class="code-title">My implementation of a C library function memcp</h3>
+                <pre class="code-example">
+                    <code>
+                        void *ft_memcpy(void *dest, const void *src, size_t n)
+                        {
+                            unsigned char *placeholder;
+                            const unsigned char *source;
+                            size_t i;
+
+                            i = 0;
+                            placeholder = (unsigned char *)dest;
+                            source = (const unsigned char *)src;
+                            while (i&lt;n)
+                            {
+                                placeholder[i] = source[i];
+                                i++;
+                            }
+                            return (dest);
+                        }
+                    </code>
+                </pre>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <p class ="footer-p">2024 Ruslan Mamedov</p>
+                <ul class="social">
+                    <li class="social-item"><a href="https://github.com/Blablabla585" class="social-link"><img src="github.png" alt="github" class="social-img"></a></li>
+                    <li class="social-item"><a href="https://rs.school/courses/javascript-ru">
+                        <img src="rsschool.png" alt="rsschool" class="social-img">
+                    </a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
